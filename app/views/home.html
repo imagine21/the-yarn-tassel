@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="theYarnTasselApp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Yarn Tassel</title>
+  <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link href="../styles/mystyles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- nav bar-->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-top">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Crochet Ideas </a></li>
+          <li><a href="#">Tutorials </a></li>
+          <li><a href="#">Diary </a></li>
+          <li><a href="#">Atelier </a></li>
+          <li><a href="#">About Me </a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- nav bar ends -->
+
+
+  <!-- logo -->
+  <div class="container">
+    <span class="logo-style">The Yarn Tassel</span>
+  </div>
+
+  <!-- logo img -->
+  <div class="container">
+    <div class="row">
+      <img src="../images/tassel4.jpg" class="intro-img">
+    </div>
+  </div>
+
+  <div class="padding"></div>
+
+  <!-- intro panel -->
+  <div class="container home-panel">
+    <p class="moto-style">lalala</p>
+    <h4><strong>WELCOME</strong></h4>
+    <p>Life is full of possibilities. So many things you can do, discover, create...
+      Don't let routine get you, get inspired, and see the world differently. learn and create something you love. And spread happiness!
+      Here you can find ideas for your next DIY project, learn techniques</p>
+    <div class="padding"></div>
+    <button class="home-panel-button">Read More</button>
+
+  </div>
+
+  <div class="padding"></div>
+
+  <!-- home menu tabs -->
+  <div class="container" ng-controller="HomeController">
+
+    <div class="row" ng-repeat="rows in chunkedMenu">
+      <div class="col-sm-4 frame" ng-repeat="item in rows">
+        <img ng-src={{item.image}} alt="CrochetIdeas">
+        <div class="home-menu-legend">{{item.legend}}</div>
+        <div class="padding"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <footer class="footer-style">
+    <p><i class="footer-content">Lema</i></p>
+    <p class="footer-content">The Yarn Tassel</p>
+    <p class="footer-content">Design and Development by Joana Simoes</p>
+  </footer>
+
+  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../../bower_components/angular/angular.min.js"></script>
+  <script src="../scripts/app.js"></script>
+  <script src="../scripts/controllers/controllers.js"></script>
+  <script src="../scripts/controllers/services.js"></script>
+  <script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+</body>
+</html>

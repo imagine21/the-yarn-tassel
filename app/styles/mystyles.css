@@ -1,0 +1,150 @@
+body{
+    border: 5px solid #EDEDED;
+}
+
+.container-fluid{
+    border-bottom: 5px solid #EDEDED;
+    background: white;
+}
+
+.navbar-default{
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-style{
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    margin: 50px;
+    display: block;
+    text-align: center;
+}
+
+.intro-img{
+    width: 100%;
+    height: 500px;
+}
+
+.home-panel{
+    padding: 50px;
+    border: 2px solid #CBBA98;
+    border-radius: 0px;
+    display: block;
+    margin:auto;
+    width: 60%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.home-panel h4{
+  text-align: center;
+  padding: 15px;
+}
+
+
+.padding{
+    padding: 20px;
+}
+
+.frame img{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    margin: auto;
+}
+
+.home-menu-legend{
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    background: #262626;
+    color: white;
+    text-align: center;
+}
+
+.moto-style{
+    text-align: center;
+    color: #ada7a7;
+}
+
+.footer-style{
+    padding: 40px;
+    background: #EDEDED;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+
+
+.home-panel-button{
+    background: #CBBA98;
+    border: #CBBA98;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+.slide-arrow-left{
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.slide-arrow-right{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+
+
+.rightdiv{
+
+}
+.leftdiv{
+  display: inline-block;
+  float: left;
+
+}
+
+.slide-container {
+}
+
+.slide-img{
+  max-width: 100%;
+  max-height: 750px;
+
+}
+
+
+.date-tutorial{
+  color: #ada7a7;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.title-tutorial{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.category-tutorial{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: pink;
+  padding: 10px;
+}

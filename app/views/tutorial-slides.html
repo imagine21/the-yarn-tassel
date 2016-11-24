@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="theYarnTasselApp">
+<html lang="en" ng-app="theYarnTasselApp" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"> <!--- WOOOOT? -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,61 +37,68 @@
 </nav>
 <!-- nav bar ends -->
 
-
 <!-- logo -->
 <div class="container">
-  <span class="logo-style">The Yarn Tassel</span>
+  <p class="date-tutorial">Date</p>
+  <h2 class="title-tutorial"><strong>White Hearth Crochet Chain</strong></h2>
+  <p></p>
+  <p class="category-tutorial"><strong>C R O C H E T</strong></p>
 </div>
 
-<!-- logo img -->
+
+<!-- Slide Media -->
 <div class="container">
   <div class="row">
-    <img src="../images/tassel4.jpg" class="intro-img">
-  </div>
-</div>
+    <div class="col-xs-12" ng-controller="SlideController">
 
-<div class="padding"></div>
-
-<!-- intro panel -->
-<div class="container home-panel">
-  <p class="moto-style">lalala</p>
-  <h4><strong>WELCOME</strong></h4>
-  <p>The Yarn Tassel is a space for yarn lovers and beginners. Here you can find inspiration for your next project or learn a new hobbie, with step by step tutorials.</p>
-  <div class="padding"></div>
-  <button class="home-panel-button">Read More</button>
-
-</div>
-
-<div class="padding"></div>
-
-<!-- home menu tabs -->
-<div class="container" ng-controller="HomeController">
-
-  <div class="row" ng-repeat="rows in chunkedMenu">
-    <div class="col-sm-4 frame" ng-repeat="item in rows">
-      <img ng-src={{item.image}} alt="CrochetIdeas">
-      <div class="home-menu-legend">{{item.legend}}</div>
-      <div class="padding"></div>
+      <div class="slide-container">
+        <div ng-repeat="slide in slides">
+          <img class="slide-img" ng-src="{{slide.image}}" ng-hide="!isCurrentSlideIndex($index)">
+          <div class="slide-description" ng-hide="!isCurrentSlideIndex($index)">
+            <span class="line" ng-repeat="line in slide.description">{{line}}</span>
+          </div>
+        </div>
+        <!--buttons -->
+        <a class="slide-arrow-left" ng-click="prevSlide()"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span></a>
+        <a class="slide-arrow-right" ng-click="nextSlide()"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span></a>
+        <!-- end buttons -->
+      </div>
     </div>
   </div>
-
 </div>
 
-<!-- footer -->
+
+
+
+<div class="padding"></div>
+<div class="padding"></div>
+
+
+
+
+
+
+
+
+<!--footer -->
 <footer class="footer-style">
   <p><i class="footer-content">Lema</i></p>
   <p class="footer-content">The Yarn Tassel</p>
   <p class="footer-content">Design and Development by Joana Simoes</p>
 </footer>
 
+
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../../bower_components/angular/angular.min.js"></script>
+<script src="../../bower_components/angular-animate/angular-animate.min.js"></script><!-- included for slides -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script><!-- included for slides -->
 <script src="../scripts/app.js"></script>
 <script src="../scripts/controllers/controllers.js"></script>
 <script src="../scripts/controllers/services.js"></script>
 <script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-
 
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 angular.module('theYarnTasselApp')
 
+// home page
   .factory('homeFactory', function(){
     var homefac = {};
 
@@ -42,4 +43,49 @@ angular.module('theYarnTasselApp')
 
     return homefac;
 
-  });
+  })
+  // end home page
+
+
+  // tutorial-slides
+  .factory('slidesFactory', function() {
+    var slidesfac = {};
+
+    var caroussel = [
+      {
+        image: '../images/slide-img/mittens/step00',
+        description: ['Get Started']
+      },
+      {
+        image: '../images/crochet%20hearth%20chain/step1.jpg',
+        description: [
+          'Start with 3 chains.',
+          'LALAL',
+          'LALALA',
+          'LLA']
+      }
+    ];
+
+    slidesfac.getSlides = function(){
+      return caroussel;
+    };
+
+
+
+
+
+    return tutorialfac;
+  })
+
+  .filter('addLineBreaks', function(){
+    return function(input){
+      input = input|| '';
+      var output = input.split('\n');
+      return output.join('<br/>');
+    }
+  })
+
+
+
+
+;

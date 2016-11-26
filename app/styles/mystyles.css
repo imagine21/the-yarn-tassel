@@ -1,37 +1,38 @@
 body{
-    border: 5px solid #EDEDED;
+  border: 5px solid #EDEDED;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container-fluid{
-    border-bottom: 5px solid #EDEDED;
-    background: white;
+  border-bottom: 5px solid #EDEDED;
+  background: white;
 }
 
 .navbar-default{
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo-style{
-    font-family: 'Satisfy', cursive;
-    font-size: 50px;
-    margin: 50px;
-    display: block;
-    text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  margin: 50px;
+  display: block;
+  text-align: center;
 }
 
 .intro-img{
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 500px;
 }
 
 .home-panel{
-    padding: 50px;
-    border: 2px solid #CBBA98;
-    border-radius: 0px;
-    display: block;
-    margin:auto;
-    width: 60%;
-    font-family: 'Raleway', sans-serif;
+  padding: 50px;
+  border: 2px solid #CBBA98;
+  border-radius: 0px;
+  display: block;
+  margin:auto;
+  width: 60%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .home-panel h4{
@@ -41,48 +42,45 @@ body{
 
 
 .padding{
-    padding: 20px;
+  padding: 20px;
 }
 
 .frame img{
-    width: 100%;
-    height: 300px;
-    display: inline-block;
-    margin: auto;
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  margin: auto;
 }
 
 .home-menu-legend{
-    padding: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    background: #262626;
-    color: white;
-    text-align: center;
+  padding: 20px;
+  font-size: 15px;
+  background: #262626;
+  color: white;
+  text-align: center;
 }
 
 .moto-style{
-    text-align: center;
-    color: #ada7a7;
+  text-align: center;
+  color: #ada7a7;
 }
 
 .footer-style{
-    padding: 40px;
-    background: #EDEDED;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
+  padding: 40px;
+  background: #EDEDED;
+  text-align: center;
 }
 
 
 
 .home-panel-button{
-    background: #CBBA98;
-    border: #CBBA98;
-    display: block;
-    margin: auto;
-    padding: 10px;
-    width: 200px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
+  background: #CBBA98;
+  border: #CBBA98;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 200px;
+  color: white;
 }
 
 
@@ -92,6 +90,7 @@ body{
 
 .slide-arrow-left{
   position: absolute;
+  left: 100px;
   top: 50%;
   color: #fff;
   text-align: center;
@@ -100,8 +99,8 @@ body{
 }
 .slide-arrow-right{
   position: absolute;
+  right: 100px;
   top: 50%;
-  right: 20px;
   color: #fff;
   text-align: center;
   font-size: 30px;
@@ -110,40 +109,35 @@ body{
 
 
 
-.rightdiv{
 
-}
-.leftdiv{
-  display: inline-block;
-  float: left;
-
-}
-
-.slide-container {
-}
 
 .slide-img{
-  max-width: 100%;
-  max-height: 750px;
+  width: 700px;
+  margin: auto;
+  display: block;
+}
 
+.slide-description{
+  width: 700px;
+  margin: auto;
+  padding-top: 10px;
+  height: 100px;
+  text-align: center;
 }
 
 
 .date-tutorial{
   color: #ada7a7;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: 10px;
 }
 
 .title-tutorial{
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: 10px;
 }
 
 .category-tutorial{
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: pink;
   padding: 10px;

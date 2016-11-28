@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+=======
 # Logs
 logs
 *.log
@@ -35,10 +42,4 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-/node_modules
-/dist
-/.tmp
-/.sass-cache
-/bower_components
-
-/app/images
+>>>>>>> ff3ddcb8cba65b8b4bcd881886045be35a3654ac
